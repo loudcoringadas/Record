@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S333 HUBS | Home</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Bem-vindo ao S333 HUBS</h1>
+  <p>Você será redirecionado para sua key em instantes...</p>
+
+  <script>
+    // Gera token e salva no localStorage
+    const token = Math.random().toString(36).substr(2);
+    localStorage.setItem("access_token", token);
+
+    // Redireciona para a página de key
+    window.location.href = "/send-key.html";
+  </script>
+</body>
+</html>
